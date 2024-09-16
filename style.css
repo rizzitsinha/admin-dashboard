@@ -25,3 +25,10 @@ img {
 .header {
     background-color: #F6E96B;
 }
+
+.card {
+    height: 200px;
+    width: 300px;
+    background-color: #387F39;
+    border: 1px solid black;
+}
