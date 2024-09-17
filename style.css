@@ -129,3 +129,65 @@ img {
 .search img {
     height: 35px;
 }
+
+.layer-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    align-items: center;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+    gap: 8px;
+}
+
+.right-side {
+    display: flex;
+    gap: 8px;
+}
+
+/* left side elements styling */
+.left-side img {
+    height: 60px;
+}
+
+.left-side .text > p {
+    font-size: 15px;
+    font-weight: 560;
+}
+
+.left-side .text > p + p {
+    font-size: 25px;
+}
+
+/* right side elements styling */
+.right-side button {
+    font: inherit;
+    border-style: none;
+
+    background-color: hsl(210, 54%, 41%);
+    color: white;
+
+    padding: 10px;
+    border-radius: 20px;
+
+    width: 90px;
+
+    cursor: pointer;
+}
+
+.right-side button:hover { 
+    background-color: hsl(210, 54%, 50%);
+}
+
+.right-side button:active { 
+    background-color: hsl(210, 75%, 41%);
+}
+
+
+ 
