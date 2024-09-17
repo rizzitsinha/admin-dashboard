@@ -41,7 +41,11 @@ img {
 }
 
 .header {
-    background-color: #F6E96B;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    
+    position: relative;
+    z-index: 10;
+
+    padding: 20px 40px;
 }
 
 .card {
@@ -66,6 +70,7 @@ img {
 
 .cards {
     grid-area: 2 / 2 / 3 / 3;
+    background-color: #E5E7EB;
 }
 
 .nav div, .logo, .user-support div{
@@ -84,4 +89,44 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.layer-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layer-1 img {
+    height: 30px;
+}
+
+.reminder > img + img {
+    height: 40px;
+}
+
+/* .layer-2 {
+    display: flex;
+    justify-content: space-between;
+    } */
+    
+    .reminder, .search {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .reminder {
+        font-size: 17px;
+        font-weight: 700;
+        gap: 20px;
+    }
+
+.search input {
+    margin-top: -3px;
+
+    border-radius: 20px;
+    border: none;
+    background-color: #E5E7EB;
+    height: 25px;
+    width: 700px;
 }
