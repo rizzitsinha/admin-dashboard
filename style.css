@@ -1,5 +1,6 @@
 :root{
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 *, *::before, *::after {
@@ -10,7 +11,16 @@
 
 
 img {
-    height: 30px;
+    height: 26px;
+}
+
+.dashboard img {
+    filter: invert(100%) sepia(13%) saturate(0%) hue-rotate(42deg) brightness(118%) contrast(100%);
+}
+
+.logo {
+    font-size: 27px;
+    margin-left: -10px;
 }
 
 .logo img {
@@ -18,9 +28,17 @@ img {
 }
 
 .dashboard {
-    background-color: #BEDC74;
+    background-color: #25476A;
+    color: white;
+
+    font-size: 18px;
+
+    padding: 17px;
 }
 
+.dashboard div {
+    margin-left: 13px;
+}
 
 .header {
     background-color: #F6E96B;
@@ -48,4 +66,22 @@ img {
 
 .cards {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.nav div, .logo, .user-support div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.nav, .user-support {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
