@@ -48,11 +48,10 @@ img {
     padding: 20px 40px;
 }
 
+/* card width */
 .card {
     height: 200px;
-    width: 300px;
-    background-color: #387F39;
-    border: 1px solid black;
+    width: 325px;
 }
 
 .container {
@@ -189,5 +188,74 @@ img {
     background-color: hsl(210, 75%, 41%);
 }
 
+.cards {
+    padding: 20px;
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
+.floating-p{
+    position: absolute;
+    margin-left: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100vh;
+
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    margin: 20px;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.announcement-card {
+    background-color: white;
+    width: 300px;
+
+    padding: 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    border-radius: 10px;
+}
+
+.line {
+    height: 1px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: rgba(196, 182, 182, 0.89);
+
+    margin: 10px 0 10px 20px;
+}
  
+span {
+    font-weight: 600;
+}
+
+.text-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.first {
+    grid-area: 1 / 2 / 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 70px;
+
+}
