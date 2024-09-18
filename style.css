@@ -215,6 +215,7 @@ img {
 
     margin: 20px;
     padding: 20px;
+    padding-left: 30px;
 
     border-radius: 10px;
 }
@@ -258,4 +259,20 @@ span {
 
     gap: 70px;
 
+}
+
+.card {
+    position: relative;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background-color: hsla(210, 54%, 41%, 0.75);
+    border-radius: 10px 0 0 10px;
+
+    margin-top: -20px;
+    margin-left: -30px;
 }
